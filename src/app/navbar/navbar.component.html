@@ -1,0 +1,49 @@
+<nav class="nav">
+  <div class="logo">
+    <a routerLink="/home">RailWorld</a>
+  </div>
+  <ul class="menu">
+    <li><a routerLink="/about">About</a></li>
+    <li class="dropdown">
+      <a >Services<fa-icon [icon]="icon"></fa-icon></a>
+      <ul class="dropdown-menu">
+        <li><a href="#">ios</a></li>
+        <li><a href="#">Android</a></li>
+        <li><a href="#">Dapp Development Service</a></li>
+        <li><a href="#">Software Development</a></li>
+        <li><a href="#">Web Development</a></li>
+        <li><a href="#">Data Science Analystics</a></li>
+        <li><a href="#">IT Professional Services</a></li>
+      </ul>
+    </li>
+    <li><a routerLink="/testimonial">Testimonial</a></li>
+    <li class="dropdown">
+      <a >Industries<fa-icon [icon]="icon"></fa-icon></a>
+      <ul class="dropdown-menu">
+        <li><a href="#">IT</a></li>
+        <li><a href="#">Engineering</a></li>
+        <li><a href="#">On Demand Service</a></li>
+        <li><a href="#">E-Commerce</a></li>
+        <li><a href="#">Education</a></li>
+        <li><a href="#">Social Marketing</a></li>
+        <li><a href="#">Saas</a></li>
+        <li><a href="#">News</a></li>
+        <li><a href="#">Game</a></li>
+      </ul>
+    </li>
+    <li><a routerLink="/contact">Contact Us</a></li>
+    <li class="dropdown">
+      <a >Career with Us<fa-icon [icon]="icon"></fa-icon></a>
+      <ul class="dropdown-menu">
+        <li><a href="/sign-in">Currently hiring</a></li>
+      </ul>
+    </li>
+  </ul>
+  <div class="search">
+    <input type="text" placeholder="Search" />
+    <button><fa-icon [icon]="search"></fa-icon></button>
+  </div>
+  <div class="profile">
+    <a routerLink="/sign-in"><fa-icon [icon]="user1"></fa-icon></a>
+  </div>
+</nav>
