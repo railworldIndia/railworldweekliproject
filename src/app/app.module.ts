@@ -1,10 +1,10 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { ReactiveFormsModule,FormsModule } from '@angular/forms';
+import { ReactiveFormsModule, FormsModule, FormGroup } from '@angular/forms';
 // import {MatFormFieldModule} from '@angular/material/form-field';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import {AngularFireStorageModule} from '@angular/fire/compat/storage';
+import { AngularFireStorageModule } from '@angular/fire/compat/storage';
 import { AngularFireModule } from "@angular/fire/compat";
 import { NavbarComponent } from './navbar/navbar.component';
 import { AboutComponent } from './about/about.component';
@@ -13,10 +13,10 @@ import { TestimonialComponent } from './testimonial/testimonial.component';
 import { IndustriesComponent } from './industries/industries.component';
 import { ContactUsComponent } from './contact-us/contact-us.component';
 import { CareerComponent } from './career/career.component';
-import { ProfileComponent } from './profile/profile.component';
 import { HomeComponent } from './home/home.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { FooterComponent } from './footer/footer.component';
+import { SigninSignupComponent } from './signin-signup/signin-signup.component';
 
 
 @NgModule({
@@ -29,10 +29,10 @@ import { FooterComponent } from './footer/footer.component';
     IndustriesComponent,
     ContactUsComponent,
     CareerComponent,
-    ProfileComponent,
     HomeComponent,
     FooterComponent,
-    
+    SigninSignupComponent,
+
   ],
   imports: [
     BrowserModule,
@@ -40,7 +40,8 @@ import { FooterComponent } from './footer/footer.component';
     FormsModule,
     ReactiveFormsModule,
     FontAwesomeModule,
-    
+
+
   ],
   providers: [],
   bootstrap: [AppComponent]

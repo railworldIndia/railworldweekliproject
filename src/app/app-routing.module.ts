@@ -7,7 +7,7 @@ import { IndustriesComponent } from './industries/industries.component';
 import { ContactUsComponent } from './contact-us/contact-us.component';
 import { CareerComponent } from './career/career.component';
 import { HomeComponent } from './home/home.component';
-import { ProfileComponent } from './profile/profile.component';
+import { SigninSignupComponent } from './signin-signup/signin-signup.component';
 const routes: Routes = [
   {
     path:"about",
@@ -39,7 +39,7 @@ const routes: Routes = [
   },
   {
     path:"sign-in",
-    component:ProfileComponent
+    component:SigninSignupComponent
   },
   
 ];

@@ -1,0 +1,65 @@
+<div class="container-fluid">
+    <h1>h</h1>
+    <div class="card"  *ngIf="!showSignUp">
+        <div class="title">
+            <h5>SignIn</h5>
+        </div>
+        <form #myForm = "ngForm" >
+            <input type="text" ngModel name="email" placeholder="Enter your email">
+            <input type="text" ngModel name="password" placeholder="Enter your password">
+            <button onclick="signIn(myForm)">SignIn</button>
+            <a id="forget" href="#">Forget password</a>
+            <br>
+            <label>If you don't have account?<a routerLink="/sign-in" (click)="openSignUp()">click</a></label>
+        </form>
+        <div class="sosial-media">
+            <h6>Follow Us</h6>
+            <div class="row">
+                <div class="col-3">
+                    <a href="https://twitter.com/railworldindia"><fa-icon class="fa-icon" [icon]="twitter"></fa-icon></a>
+                </div>
+                <div class="col-3">
+                    <a href="https://www.instagram.com/_railworldindia/"><fa-icon class="fa-icon" [icon]="insta"></fa-icon></a>
+                </div>
+                <div class="col-3">
+                    <a href="https://www.linkedin.com/in/railworld-india-a62872276/"><fa-icon class="fa-icon" [icon]="linkedin"></fa-icon></a>
+                </div>
+                <div class="col-3">
+                    <a href="https://www.facebook.com/profile.php?id=100092449213118"><fa-icon class="fa-icon" [icon]="facbook"></fa-icon></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- -------------------------------------------------------- -->
+    <div class="card " style="height: 550px;" *ngIf="showSignUp">
+        <div class="title">
+            <h5>SignUp</h5>
+        </div>
+        <form #myForm = "ngForm" >
+            <input type="text" ngModel name="name" placeholder="Enter your name">
+            <input type="text" ngModel name="address" placeholder="Enter your address">
+            <input type="text" ngModel name="email" placeholder="Enter your email">
+            <input type="text" ngModel name="password" placeholder="Enter your password">
+            <button onclick="signIn(myForm)">SignUp</button>
+            <label>Already have account?<a routerLink="/sign-in" (click)="openSignIn()">click</a></label>
+        </form>
+        <div class="sosial-media">
+            <h6>Follow Us</h6>
+            <div class="row">
+                <div class="col-3">
+                    <a href="https://twitter.com/railworldindia"><fa-icon class="fa-icon" [icon]="twitter"></fa-icon></a>
+                </div>
+                <div class="col-3">
+                    <a href="https://www.instagram.com/_railworldindia/"><fa-icon class="fa-icon" [icon]="insta"></fa-icon></a>
+                </div>
+                <div class="col-3">
+                    <a href="https://www.linkedin.com/in/railworld-india-a62872276/"><fa-icon class="fa-icon" [icon]="linkedin"></fa-icon></a>
+                </div>
+                <div class="col-3">
+                    <a href="https://www.facebook.com/profile.php?id=100092449213118"><fa-icon class="fa-icon" [icon]="facbook"></fa-icon></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

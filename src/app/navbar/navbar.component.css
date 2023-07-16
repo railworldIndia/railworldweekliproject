@@ -14,11 +14,10 @@
     
 }
 
-.logo a {
-    font-size: 24px;
-    font-weight: bold;
-    text-decoration: none;
-    color: #1f099b;
+.logo img {
+    width: 155px;
+    height: 60px;
+    margin-left: 15px;
 }
 
 .menu {
