@@ -1,0 +1,60 @@
+{
+  "user": [
+    {
+      "name": "ramswarup kalame",
+      "address": "Rajnandgon",
+      "email": "ramkalame12@gmail.com",
+      "password": "ram123",
+      "id": 1
+    },
+    {
+      "name": "ramkalame",
+      "address": "rajnandgaon",
+      "email": "ramkalame@gmail.com",
+      "password": "123ram",
+      "id": 2
+    },
+    {
+      "name": "ram",
+      "address": "rpr",
+      "email": "r@gmail.com",
+      "password": "123ram",
+      "id": 3
+    },
+    {
+      "name": "abhishek",
+      "address": "jashpur",
+      "email": "abhishek12@gmail.com",
+      "password": "123absk",
+      "id": 4
+    },
+    {
+      "name": "poorab",
+      "address": "rajnandgaon",
+      "email": "poorab123@gmail.com",
+      "password": "poorab123",
+      "id": 5
+    },
+    {
+      "name": "raju",
+      "address": "rpr",
+      "email": "raju@gmail.com",
+      "password": "raju123",
+      "id": 6
+    },
+    {
+      "name": "sonu",
+      "address": "rpr",
+      "email": "sonu12@gmail.com",
+      "password": "sonu123",
+      "id": 7
+    },
+    {
+      "name": "heer",
+      "address": "rajnandgaon",
+      "email": "heer12@gmail.com",
+      "password": "heer123",
+      "id": 8
+    }
+  ]
+}

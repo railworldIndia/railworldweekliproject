@@ -4,10 +4,10 @@
         <div class="title">
             <h5>SignIn</h5>
         </div>
-        <form #myForm = "ngForm" >
-            <input type="text" ngModel name="email" placeholder="Enter your email">
-            <input type="text" ngModel name="password" placeholder="Enter your password">
-            <button onclick="signIn(myForm)">SignIn</button>
+        <form [formGroup]="loginForm" (ngSubmit)="signIn()" >
+            <input type="text" class="form-control" name="email" placeholder="Enter your email">
+            <input type="text"  class="form-control" name="password" placeholder="Enter your password">
+            <button type="submit" class="btn">SignIn</button>
             <a id="forget" href="#">Forget password</a>
             <br>
             <label>If you don't have account?<a routerLink="/sign-in" (click)="openSignUp()">click</a></label>
@@ -25,7 +25,7 @@
                     <a href="https://www.linkedin.com/in/railworld-india-a62872276/"><fa-icon class="fa-icon" [icon]="linkedin"></fa-icon></a>
                 </div>
                 <div class="col-3">
-                    <a href="https://www.facebook.com/profile.php?id=100092449213118"><fa-icon class="fa-icon" [icon]="facbook"></fa-icon></a>
+                    <a href="https://www.facebook.com/profile.php?id=100092449213118"><fa-icon class="fa-icon" [icon]="facebook"></fa-icon></a>
                 </div>
             </div>
         </div>
@@ -36,12 +36,12 @@
         <div class="title">
             <h5>SignUp</h5>
         </div>
-        <form #myForm = "ngForm" >
-            <input type="text" ngModel name="name" placeholder="Enter your name">
-            <input type="text" ngModel name="address" placeholder="Enter your address">
-            <input type="text" ngModel name="email" placeholder="Enter your email">
-            <input type="text" ngModel name="password" placeholder="Enter your password">
-            <button onclick="signIn(myForm)">SignUp</button>
+        <form [formGroup]="loginForm" (ngSubmit)="signUp()" >
+            <input type="text" class="form-control" formControlName="name" placeholder="Enter your name">
+            <input type="text" class="form-control" formControlName="address" placeholder="Enter your address">
+            <input type="text" class="form-control" formControlName="email" placeholder="Enter your email">
+            <input type="text" class="form-control" formControlName="password" placeholder="Enter your password">
+            <button  type="submit" class="btn">SignUp</button>
             <label>Already have account?<a routerLink="/sign-in" (click)="openSignIn()">click</a></label>
         </form>
         <div class="sosial-media">
@@ -57,7 +57,7 @@
                     <a href="https://www.linkedin.com/in/railworld-india-a62872276/"><fa-icon class="fa-icon" [icon]="linkedin"></fa-icon></a>
                 </div>
                 <div class="col-3">
-                    <a href="https://www.facebook.com/profile.php?id=100092449213118"><fa-icon class="fa-icon" [icon]="facbook"></fa-icon></a>
+                    <a href="https://www.facebook.com/profile.php?id=100092449213118"><fa-icon class="fa-icon" [icon]="facebook"></fa-icon></a>
                 </div>
             </div>
         </div>

@@ -1,42 +1,43 @@
-<nav class="nav">
+<nav   class="nav">
   <div class="logo">
     <!-- <a routerLink="/home">RailWorld</a> -->
     <img  routerLink="/home" src="/assets/logo.png" alt="Loding.....">
   </div>
-  <ul class="menu">
+  <ul  class="menu">
+  <!-- <ul *ngIf="menuType==='default'" class="menu"> -->
     <li><a routerLink="/about">About</a></li>
     <li class="dropdown">
       <a >Services<fa-icon [icon]="icon"></fa-icon></a>
       <ul class="dropdown-menu">
-        <li><a href="#">ios</a></li>
-        <li><a href="#">Android</a></li>
-        <li><a href="#">Dapp Development Service</a></li>
-        <li><a href="#">Software Development</a></li>
-        <li><a href="#">Web Development</a></li>
-        <li><a href="#">Data Science Analystics</a></li>
-        <li><a href="#">IT Professional Services</a></li>
+        <li><a routerLink="service-ios">ios</a></li>
+        <li><a routerLink="service-android">Android</a></li>
+        <li><a routerLink="service-dapp-development">Dapp Development Service</a></li>
+        <li><a routerLink="service-web-development">Software Development</a></li>
+        <li><a routerLink="service-software-development">Web Development</a></li>
+        <li><a routerLink="service-data-science-analytic">Data Science Analystics</a></li>
+        <li><a routerLink="service-it-professionals">IT Professional Services</a></li>
       </ul>
     </li>
     <li><a routerLink="/testimonial">Testimonial</a></li>
     <li class="dropdown">
       <a >Industries<fa-icon [icon]="icon"></fa-icon></a>
       <ul class="dropdown-menu">
-        <li><a href="#">IT</a></li>
-        <li><a href="#">Engineering</a></li>
-        <li><a href="#">On Demand Service</a></li>
-        <li><a href="#">E-Commerce</a></li>
-        <li><a href="#">Education</a></li>
-        <li><a href="#">Social Marketing</a></li>
-        <li><a href="#">Saas</a></li>
-        <li><a href="#">News</a></li>
-        <li><a href="#">Game</a></li>
+        <li><a routerLink="industries-it">IT</a></li>
+        <li><a  routerLink="industries-engineering">Engineering</a></li>
+        <li><a  routerLink="industries-on-demand">On Demand Service</a></li>
+        <li><a  routerLink="industries-e-commerce">E-Commerce</a></li>
+        <li><a  routerLink="industries-education">Education</a></li>
+        <li><a  routerLink="industries-social-marketing">Social Marketing</a></li>
+        <li><a  routerLink="industries-saas">Saas</a></li>
+        <li><a  routerLink="industries-news">News</a></li>
+        <li><a  routerLink="industries-game">Game</a></li>
       </ul>
     </li>
     <li><a routerLink="/contact">Contact Us</a></li>
     <li class="dropdown">
       <a >Career with Us<fa-icon [icon]="icon"></fa-icon></a>
       <ul class="dropdown-menu">
-        <li><a href="/sign-in">Currently hiring</a></li>
+        <li><a routerLink="career-withius-currently-hiring">Currently hiring</a></li>
       </ul>
     </li>
   </ul>
@@ -45,6 +46,11 @@
     <button><fa-icon [icon]="search"></fa-icon></button>
   </div>
   <div class="profile">
-    <a routerLink="/sign-in"><fa-icon [icon]="user1"></fa-icon></a>
+    <a  routerLink="/sign-in"><fa-icon [icon]="user1"></fa-icon></a>
+    <!-- <a  routerLink="/sign-in">Logout</a> -->
   </div>
+  <!-- <div *ngSwitch="menuType" class="profile">
+    <a *ngSwitchCase="'default'" routerLink="/sign-in"><fa-icon [icon]="user1"></fa-icon></a>
+    <a *ngSwitchCase="'sign-in'" routerLink="/sign-in">Logout</a>
+  </div> -->
 </nav>
